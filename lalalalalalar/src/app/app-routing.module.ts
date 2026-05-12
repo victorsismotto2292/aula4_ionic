@@ -12,10 +12,9 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'tela-confirmar',
-    loadChildren: () => import('./tela-confirmar/tela-confirmar.module').then( m => m.TelaConfirmarPageModule)
+    path: 'tela-confirmar/:nome/:email/:telefone',
+    loadChildren: () => import('./tela-confirmar/tela-confirmar.module').then(m => m.TelaConfirmarPageModule)
   },
-
 ];
 
 @NgModule({
